@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Book Your Trip</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Booking Page Section -->
+    <header class="booking-header">
+        <h1>Book Your Dream Vacation</h1><br>
+        <p>Plan your next trip with us! Select your destination and travel preferences below.</p>
+    </header>
+
+    <section class="booking-form-section">
+        <form action="submit_booking.php" method="POST" class="booking-form">
+            
+            <label for="full-name">Full Name:</label>
+            <input type="text" id="full-name" name="full-name" placeholder="Your Full Name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="example@email.com" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="+91 12345 67890" required>
+
+            <label for="destination">Choose Your Destination:</label>
+            <select id="destination" name="destination" required>
+                <option value="" disabled selected>Select Destination</option>
+                <option value="paris">Paris, France</option>
+                <option value="bali">Bali, Indonesia</option>
+                <option value="maldives">Maldives</option>
+                <option value="sydney">Sydney, Australia</option>
+                <option value="tokyo">Tokyo, Japan</option>
+            </select>
+
+            <label for="travel-date">Travel Date:</label>
+            <input type="date" id="travel-date" name="travel-date" required>
+
+            <label for="guest-count">Number of Guests:</label>
+            <input type="number" id="guest-count" name="guest-count" min="1" max="10" required>
+
+            <label for="additional-notes">Additional Notes (Optional):</label>
+            <textarea id="additional-notes" name="additional-notes" rows="5" placeholder="Let us know if you have special requests..."></textarea>
+
+            <button type="submit" class="submit-btn">Confirm Booking</button>
+        </form>
+    </section>
+
+</body>
+</html>

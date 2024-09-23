@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel and Tourism</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <script defer src="js/scripts.js"></script>
+</head>
+<body>
+
+    <!-- Navigation Bar with Transparent Background -->
+    <nav class="navbar">
+        <div class="logo">TRAVEL & TOURISM</div>
+        <button class="hamburger-menu" onclick="toggleMenu()">☰</button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="#packages">Packages</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Full-Screen Hero Section with Gradient Overlay -->
+    <header class="hero-section">
+        <div class="hero-content">
+            <h1 class="fade-in-text">Discover Your Next Destination</h1>
+            <p>Let us take you to the most beautiful places on Earth.</p>
+            <a href="#packages" class="cta-button">Explore Packages</a>
+        </div>
+    </header>
+
+    <!-- Travel Packages Section with Hover Animation -->
+    <section id="packages" class="packages">
+        <h2>Curated Travel Packages</h2>
+        <div class="package-grid">
+            <div class="package-card">
+                <img src="images/package1.jpg" alt="Beach Resort">
+                <div class="package-info">
+                    <h3>Beach Resort</h3>
+                    <p>Relax at luxurious beach resorts.</p>
+                    <span class="price">₹25,000</span>
+                    <a href="booking.html" class="cta-button">Book Now</a>
+                </div>
+            </div>
+            <div class="package-card">
+                <img src="images/package2.jpg" alt="Mountain Adventure">
+                <div class="package-info">
+                    <h3>Mountain Escape</h3>
+                    <p>Explore mountain treks and nature.</p>
+                    <span class="price">₹30,000</span>
+                    <a href="booking.html" class="cta-button">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dynamic Testimonials Slider -->
+    <section id="testimonials" class="testimonials-section">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonial-slider" id="testimonialSlider">
+            <div class="testimonial">
+                <p>"The experience was incredible! I will definitely travel with them again."</p>
+                <h4>- Sarah Williams</h4>
+            </div>
+            <div class="testimonial">
+                <p>"Wonderful service and beautiful destinations!"</p>
+                <h4>- John Doe</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Subscription with Elegant Design -->
+    <section class="newsletter-section">
+        <h2>Stay Informed</h2>
+        <form action="#" method="POST" class="newsletter-form">
+            <input type="email" name="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+
+    <!-- Footer with Social Icons -->
+    <footer>
+        <p>&copy; 2024 Travel and Tourism | All rights reserved.</p>
+        <div class="social-icons">
+            <a href="#"><img src="images/facebook-icon.png" alt="Facebook"></a>
+            <a href="#"><img src="images/instagram-icon.png" alt="Instagram"></a>
+            <a href="#"><img src="images/twitter-icon.png" alt="Twitter"></a>
+        </div>
+    </footer>
+
+</body>
+</html>
